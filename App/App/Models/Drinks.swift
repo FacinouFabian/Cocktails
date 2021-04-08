@@ -33,4 +33,25 @@ struct Drink: Decodable {
     let strIngredient13: String?
     let strIngredient14: String?
     let strIngredient15: String?
+    var ingredients: [String] {
+        var array: [String] = []
+        
+        if let i = strIngredient1 { array.append(i) }
+        if let i = strIngredient2 { array.append(i) }
+        if let i = strIngredient3 { array.append(i) }
+        if let i = strIngredient4 { array.append(i) }
+        if let i = strIngredient5 { array.append(i) }
+        if let i = strIngredient6 { array.append(i) }
+        if let i = strIngredient7 { array.append(i) }
+        if let i = strIngredient8 { array.append(i) }
+        if let i = strIngredient9 { array.append(i) }
+        if let i = strIngredient10 { array.append(i) }
+        if let i = strIngredient11 { array.append(i) }
+        if let i = strIngredient12 { array.append(i) }
+        if let i = strIngredient13 { array.append(i) }
+        if let i = strIngredient14 { array.append(i) }
+        if let i = strIngredient15 { array.append(i) }
+        
+        return array
+    }
 }

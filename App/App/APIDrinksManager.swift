@@ -11,7 +11,7 @@ class APIDrinksManager {
     
     static var shared = APIDrinksManager()
     
-    private let baseURL = "https://www.thecocktaildb.com/api/json/v1/1/random.php"
+    private let baseURL = "https://www.thecocktaildb.com/api/json/v1/1"
     private let session = URLSession(configuration: .default)
     
     private func call<Data: Decodable>(_ path: String, completion: @escaping (Data?) -> Void) {
@@ -41,7 +41,7 @@ class APIDrinksManager {
     }
     
     func drinks(completion: @escaping (Drinks?) -> (Void)) {
-        self.call("drinks", completion: completion)
+        self.call("search.php?f=a", completion: completion)
     }
     
 }
