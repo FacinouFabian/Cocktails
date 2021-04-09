@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D955698B59FA18B3DD9636B2711A0FF /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73BD11719C8D2F1912D616F3C7E2081 /* UIView+Autolayout.swift */; };
+		1F8FD1A7CA1EDCF05F760F4C1C753D51 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D97E9B21E60C48695BFDA8D6A0BB7DF /* UIView+IBInspectable.swift */; };
+		304B20B2BE325A845D79D317F5B21C4F /* SkeletonMultilineLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2355F636BCA83E48F8036DB79B5A9AA5 /* SkeletonMultilineLayerBuilder.swift */; };
+		3582DF20EEEEA0297649A55F10F35301 /* RecursiveProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677C055AD7A66A64193196E6579AE174 /* RecursiveProtocol.swift */; };
+		35D91DE652731F85BBE45D57C4564A61 /* SkeletonDebug.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B9C5A264A5E67006A5AD985F16A2CF /* SkeletonDebug.swift */; };
+		3E7101162F5BA5EBD59999E6CF10B335 /* SkeletonReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36B0C44C82517461ED54A7FA7AED50A /* SkeletonReusableCell.swift */; };
+		471260DCD412DCF354550360BCEE37FD /* SkeletonView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0538E2E80AAF73292BD0180DA0DF7C6 /* SkeletonView-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		47E68AF30987BEEAB191E14FB6705CA5 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CCA94C2668CF972738DA3DA147977 /* CALayer+Extensions.swift */; };
+		53F564CFE703C865416F0D4086CDD856 /* UITextView+Multiline.swift in Sources */ = {isa = PBXBuildFile; fileRef = D038DD4FAF6CD1E7D1214DF52C9BF913 /* UITextView+Multiline.swift */; };
+		5551182D5F6B120E8223236ED9F6C46B /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F613004A3DB8ED4FF25678569097E347 /* UIView+Frame.swift */; };
+		55F6682E70AA334E9342CAA9EE5AB240 /* Pods-App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A10E8D70C02233E609D8AA94B96BFEF /* Pods-App-dummy.m */; };
+		560E8B941A5A0FCE1F08744A49498B22 /* SkeletonGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDEA464733D65EE089C73DD255C1B36 /* SkeletonGradient.swift */; };
+		5732AF5F04330DDCF600F0779FFDB817 /* SkeletonTableViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B9E346F0C60B553748881B6FB74C2E /* SkeletonTableViewProtocols.swift */; };
+		5CD77FC25190B328F977AB44262A4A05 /* UITableView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5E5B918B84943669828D7B7C10EA63 /* UITableView+CollectionSkeleton.swift */; };
+		5DC2D9C76BBA78F0F0EC9CFF3F93BD37 /* UIView+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996FB4EF5F67D2947B8D333B6089A0B9 /* UIView+Transitions.swift */; };
+		5F7A3019342B2B0041B2FAF2F7424830 /* Pods-App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 737A543975CD6FF40C6B895D93DB12EC /* Pods-App-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		615F3ACAF7BA77B9EDE8FFC228048A6D /* AssociationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55218B84E8352482F71D7669DA1C3CC2 /* AssociationPolicy.swift */; };
+		656471BA26CF79BE66B0912363C3DA87 /* SkeletonConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C352273DBBAC038043D939E91A30E2A9 /* SkeletonConfig.swift */; };
+		66EBF7FF1B9AB3F33B605D8EC8998336 /* SkeletonCollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250456E7FC368A02CEF554487421613C /* SkeletonCollectionDataSource.swift */; };
+		6AADFEFCEBD191EFB09731D689D65474 /* CollectionSkeletonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F49F8E2BEC188E358EE24B94026727 /* CollectionSkeletonProtocol.swift */; };
+		71BE34ABDC0B267640468CDF82D4556D /* SkeletonLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F1D98BFC6EFECC3083D27DDBD7285C4 /* SkeletonLayer.swift */; };
+		7727526955D490C83247A85BC3E90FF3 /* SkeletonAnimationBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4547DAD39CAE1EDE0DBB21FEF60F61BF /* SkeletonAnimationBuilder.swift */; };
+		7DA73920DE691EF892E44319F1B1FFAC /* SkeletonFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898DA1868B1243E707D2E4FB134C40F3 /* SkeletonFlow.swift */; };
+		7F32D6553531902BD2A6E58404832362 /* ContainsMultilineText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7877EC6E6D5191BE7D0891F6B46846C2 /* ContainsMultilineText.swift */; };
+		84A5B15F6B7D91B2EF94591AB0D9599F /* PrepareForSkeletonProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CE952429BE4DDC091EA4D7DE68038C /* PrepareForSkeletonProtocol.swift */; };
+		8DD4AA7592E9E4B751ADFD8B849C34CC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F7BDA83A2B883937DDE3F272212F26 /* UIView+Extension.swift */; };
+		91A1BE74ACD287A9E4CD4008191D530B /* SkeletonView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B8FC90FC47ABB7B680C59277CA2DEBE /* SkeletonView-dummy.m */; };
+		951526EEFFDF937348897BB428FC7CD1 /* SkeletonLayerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021A8B0734D535C2AAD898BFA1B19E69 /* SkeletonLayerBuilder.swift */; };
+		998007F43DA2C1B1B2E9D0EDC75BAE06 /* SubviewsSkeletonables.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61603EF9E0306C1A44DD737FB426658 /* SubviewsSkeletonables.swift */; };
+		A45E60833407AA0821E0614F8EFE6BA0 /* Recoverable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B5A59563526692305C4CC79A3DD7D0 /* Recoverable.swift */; };
+		A77BAD1511084AAD088D0BFC60552791 /* Swizzling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86471328DAD479D9C7B619F1CAB80BEE /* Swizzling.swift */; };
+		B0CAA4B28294C006D8E3B9AB3E6F718C /* ProcessInfo+XCTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE25B1E8BEB9E459F44A469C955FAF11 /* ProcessInfo+XCTest.swift */; };
+		B2B72214C33225789FED0786FFEA869B /* SkeletonCollectionViewProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E427504121A90239E4C398FBBEFD1FE /* SkeletonCollectionViewProtocols.swift */; };
+		B32F3CE78320D291B18F78C08853EA0A /* UICollectionView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5A4D8EE00CA46808F5E826950AD1FD4 /* UICollectionView+CollectionSkeleton.swift */; };
+		B456289BE533AA5C3AF5AC2006FEF0B0 /* UIView+CollectionSkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F98E5B48189EA55180D2D22ABA9C940C /* UIView+CollectionSkeleton.swift */; };
+		B7EFB3A6BF018CC7AEB8D030CE832EDB /* SkeletonTransitionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6713B8BEDAABE493109C58909DE0715 /* SkeletonTransitionStyle.swift */; };
+		BD7C72024C79074937305126DBC75970 /* RecoverableViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2279344EDD08AB3C589753A1FFD2352 /* RecoverableViewState.swift */; };
+		E1F855048C03E9061E4AEF5194D339DA /* Int+Whitespaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7026E210DAB03C8FBFE1CBAD26BF9F20 /* Int+Whitespaces.swift */; };
+		E894B2F4CD3943C74D76D3152C99B520 /* SkeletonAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A08A49539EB2E5152B85C1907E2D45 /* SkeletonAppearance.swift */; };
+		EDA4B8E50DB856E60E4C75A8669B4192 /* SkeletonCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2C62DCB38289EED21D8082E61F2BE5 /* SkeletonCollectionDelegate.swift */; };
+		F1833AC4E97963D7A03AA96E5AE94C38 /* UIColor+Skeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62E1B09786317434B4EAA8CD66B87792 /* UIColor+Skeleton.swift */; };
+		F226EE7A9BADBB3F0A3D3CE3785E3D15 /* UIView+UIApplicationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6354BDF037F4BD2D62DF067437011F3C /* UIView+UIApplicationDelegate.swift */; };
+		F2F20902682BF550618B86091ACA1D94 /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89516841F955D867FA8AD5FD8BCD61C1 /* SkeletonView.swift */; };
+		F3282E5FE53586F032507154B78B371E /* UITableView+VisibleSections.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F33371CF9E810DD5D4087DA78B041F /* UITableView+VisibleSections.swift */; };
+		FA4962D32263B68E908CE73F69961CDE /* UILabel+Multiline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB57A6910C8F721853D45E36841B37E /* UILabel+Multiline.swift */; };
+		FA59614126D0E18E13EA79E5F6FB9994 /* GenericCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42CA576CD4345EB378FC7CDBA87BF6A /* GenericCollectionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C1EFDEE796E1BF20A0D929D2725B6E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CEEFD1CB630CA790F0396E2E24A4C8C;
+			remoteInfo = SkeletonView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F7BDA83A2B883937DDE3F272212F26 /* UIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Extension.swift"; path = "Sources/Extensions/UIView+Extension.swift"; sourceTree = "<group>"; };
+		021A8B0734D535C2AAD898BFA1B19E69 /* SkeletonLayerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayerBuilder.swift; path = Sources/Builders/SkeletonLayerBuilder.swift; sourceTree = "<group>"; };
+		07A08A49539EB2E5152B85C1907E2D45 /* SkeletonAppearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonAppearance.swift; path = Sources/Appearance/SkeletonAppearance.swift; sourceTree = "<group>"; };
+		0A10E8D70C02233E609D8AA94B96BFEF /* Pods-App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-App-dummy.m"; sourceTree = "<group>"; };
+		0AB28DA97C7F19FAF34F0BB3F2C2EBD4 /* Pods-App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-App-acknowledgements.plist"; sourceTree = "<group>"; };
+		1280C7726483AF5988A97C0E71844EC8 /* Pods-App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-App.modulemap"; sourceTree = "<group>"; };
+		1D97E9B21E60C48695BFDA8D6A0BB7DF /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+IBInspectable.swift"; path = "Sources/Extensions/UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+		1E427504121A90239E4C398FBBEFD1FE /* SkeletonCollectionViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionViewProtocols.swift; path = Sources/Collections/CollectionViews/SkeletonCollectionViewProtocols.swift; sourceTree = "<group>"; };
+		2355F636BCA83E48F8036DB79B5A9AA5 /* SkeletonMultilineLayerBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonMultilineLayerBuilder.swift; path = Sources/Builders/SkeletonMultilineLayerBuilder.swift; sourceTree = "<group>"; };
+		250456E7FC368A02CEF554487421613C /* SkeletonCollectionDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionDataSource.swift; path = Sources/Collections/SkeletonCollectionDataSource.swift; sourceTree = "<group>"; };
+		2B8FC90FC47ABB7B680C59277CA2DEBE /* SkeletonView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkeletonView-dummy.m"; sourceTree = "<group>"; };
+		2E8A85179406589DA200D633A58333A3 /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		30CE952429BE4DDC091EA4D7DE68038C /* PrepareForSkeletonProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PrepareForSkeletonProtocol.swift; path = Sources/Helpers/PrepareForSkeletonProtocol.swift; sourceTree = "<group>"; };
+		39B9E346F0C60B553748881B6FB74C2E /* SkeletonTableViewProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTableViewProtocols.swift; path = Sources/Collections/TableViews/SkeletonTableViewProtocols.swift; sourceTree = "<group>"; };
+		3AD8F765EF058731D43E2438D190135E /* Pods-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-App.debug.xcconfig"; sourceTree = "<group>"; };
+		4547DAD39CAE1EDE0DBB21FEF60F61BF /* SkeletonAnimationBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonAnimationBuilder.swift; path = Sources/SkeletonAnimationBuilder.swift; sourceTree = "<group>"; };
+		498CCA94C2668CF972738DA3DA147977 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Extensions.swift"; path = "Sources/Extensions/CALayer+Extensions.swift"; sourceTree = "<group>"; };
+		55218B84E8352482F71D7669DA1C3CC2 /* AssociationPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssociationPolicy.swift; path = Sources/Helpers/AssociationPolicy.swift; sourceTree = "<group>"; };
+		5A2C62DCB38289EED21D8082E61F2BE5 /* SkeletonCollectionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonCollectionDelegate.swift; path = Sources/Collections/SkeletonCollectionDelegate.swift; sourceTree = "<group>"; };
+		5AB57A6910C8F721853D45E36841B37E /* UILabel+Multiline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Multiline.swift"; path = "Sources/Multilines/UILabel+Multiline.swift"; sourceTree = "<group>"; };
+		5BDEA464733D65EE089C73DD255C1B36 /* SkeletonGradient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonGradient.swift; path = Sources/SkeletonGradient.swift; sourceTree = "<group>"; };
+		5BEF4602752E47C46E8C10FB8B4B57F2 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-App.a"; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62E1B09786317434B4EAA8CD66B87792 /* UIColor+Skeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Skeleton.swift"; path = "Sources/Extensions/UIColor+Skeleton.swift"; sourceTree = "<group>"; };
+		6354BDF037F4BD2D62DF067437011F3C /* UIView+UIApplicationDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+UIApplicationDelegate.swift"; path = "Sources/Extensions/UIView+UIApplicationDelegate.swift"; sourceTree = "<group>"; };
+		677C055AD7A66A64193196E6579AE174 /* RecursiveProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecursiveProtocol.swift; path = Sources/Helpers/RecursiveProtocol.swift; sourceTree = "<group>"; };
+		7026E210DAB03C8FBFE1CBAD26BF9F20 /* Int+Whitespaces.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Int+Whitespaces.swift"; path = "Sources/Extensions/Int+Whitespaces.swift"; sourceTree = "<group>"; };
+		71B5A59563526692305C4CC79A3DD7D0 /* Recoverable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Recoverable.swift; path = Sources/Recoverable/Recoverable.swift; sourceTree = "<group>"; };
+		737A543975CD6FF40C6B895D93DB12EC /* Pods-App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-App-umbrella.h"; sourceTree = "<group>"; };
+		7877EC6E6D5191BE7D0891F6B46846C2 /* ContainsMultilineText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainsMultilineText.swift; path = Sources/Multilines/ContainsMultilineText.swift; sourceTree = "<group>"; };
+		86471328DAD479D9C7B619F1CAB80BEE /* Swizzling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swizzling.swift; path = Sources/Helpers/Swizzling.swift; sourceTree = "<group>"; };
+		89516841F955D867FA8AD5FD8BCD61C1 /* SkeletonView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonView.swift; path = Sources/SkeletonView.swift; sourceTree = "<group>"; };
+		898DA1868B1243E707D2E4FB134C40F3 /* SkeletonFlow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonFlow.swift; path = Sources/SkeletonFlow.swift; sourceTree = "<group>"; };
+		8D3D01D194963DF961A4A47A4C77D677 /* SkeletonView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkeletonView.modulemap; sourceTree = "<group>"; };
+		8F1D98BFC6EFECC3083D27DDBD7285C4 /* SkeletonLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonLayer.swift; path = Sources/SkeletonLayer.swift; sourceTree = "<group>"; };
+		94DDC9C1643EBAA9FA3F2E79CADE2607 /* Pods-App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		97D2F2B90F968471F18681D69078C30A /* SkeletonView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkeletonView.release.xcconfig; sourceTree = "<group>"; };
+		996FB4EF5F67D2947B8D333B6089A0B9 /* UIView+Transitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Transitions.swift"; path = "Sources/Transitions/UIView+Transitions.swift"; sourceTree = "<group>"; };
+		9A5E5B918B84943669828D7B7C10EA63 /* UITableView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+CollectionSkeleton.swift"; path = "Sources/Collections/TableViews/UITableView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0538E2E80AAF73292BD0180DA0DF7C6 /* SkeletonView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-umbrella.h"; sourceTree = "<group>"; };
+		A73BD11719C8D2F1912D616F3C7E2081 /* UIView+Autolayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Autolayout.swift"; path = "Sources/Extensions/UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		B7B9C5A264A5E67006A5AD985F16A2CF /* SkeletonDebug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonDebug.swift; path = Sources/Debug/SkeletonDebug.swift; sourceTree = "<group>"; };
+		B9F33371CF9E810DD5D4087DA78B041F /* UITableView+VisibleSections.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+VisibleSections.swift"; path = "Sources/Extensions/UITableView+VisibleSections.swift"; sourceTree = "<group>"; };
+		BE25B1E8BEB9E459F44A469C955FAF11 /* ProcessInfo+XCTest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ProcessInfo+XCTest.swift"; path = "Sources/Extensions/ProcessInfo+XCTest.swift"; sourceTree = "<group>"; };
+		C08978D368939ED231DC1AF407C75C9F /* SkeletonView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkeletonView-prefix.pch"; sourceTree = "<group>"; };
+		C352273DBBAC038043D939E91A30E2A9 /* SkeletonConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonConfig.swift; path = Sources/SkeletonConfig.swift; sourceTree = "<group>"; };
+		CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* libSkeletonView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSkeletonView.a; path = libSkeletonView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D038DD4FAF6CD1E7D1214DF52C9BF913 /* UITextView+Multiline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Multiline.swift"; path = "Sources/Multilines/UITextView+Multiline.swift"; sourceTree = "<group>"; };
+		D2279344EDD08AB3C589753A1FFD2352 /* RecoverableViewState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RecoverableViewState.swift; path = Sources/Recoverable/RecoverableViewState.swift; sourceTree = "<group>"; };
+		D61603EF9E0306C1A44DD737FB426658 /* SubviewsSkeletonables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SubviewsSkeletonables.swift; path = Sources/SubviewsSkeletonables.swift; sourceTree = "<group>"; };
+		E5A4D8EE00CA46808F5E826950AD1FD4 /* UICollectionView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+CollectionSkeleton.swift"; path = "Sources/Collections/CollectionViews/UICollectionView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
+		E6713B8BEDAABE493109C58909DE0715 /* SkeletonTransitionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonTransitionStyle.swift; path = Sources/Transitions/SkeletonTransitionStyle.swift; sourceTree = "<group>"; };
+		F25A881345F498546EB15D3AB9FA4529 /* SkeletonView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkeletonView.debug.xcconfig; sourceTree = "<group>"; };
+		F2F49F8E2BEC188E358EE24B94026727 /* CollectionSkeletonProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionSkeletonProtocol.swift; path = Sources/Collections/CollectionSkeletonProtocol.swift; sourceTree = "<group>"; };
+		F36B0C44C82517461ED54A7FA7AED50A /* SkeletonReusableCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkeletonReusableCell.swift; path = Sources/Collections/Generics/SkeletonReusableCell.swift; sourceTree = "<group>"; };
+		F42CA576CD4345EB378FC7CDBA87BF6A /* GenericCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenericCollectionView.swift; path = Sources/Collections/Generics/GenericCollectionView.swift; sourceTree = "<group>"; };
+		F613004A3DB8ED4FF25678569097E347 /* UIView+Frame.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Frame.swift"; path = "Sources/Extensions/UIView+Frame.swift"; sourceTree = "<group>"; };
+		F98E5B48189EA55180D2D22ABA9C940C /* UIView+CollectionSkeleton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+CollectionSkeleton.swift"; path = "Sources/Collections/UIView+CollectionSkeleton.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D1E56FFD1762D35E03F768ACC59C45 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC2815F1EECCC01C81DC53120C239B5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		092802B853AB8D905BACFB1992E96854 /* SkeletonView */ = {
+			isa = PBXGroup;
+			children = (
+				55218B84E8352482F71D7669DA1C3CC2 /* AssociationPolicy.swift */,
+				498CCA94C2668CF972738DA3DA147977 /* CALayer+Extensions.swift */,
+				F2F49F8E2BEC188E358EE24B94026727 /* CollectionSkeletonProtocol.swift */,
+				7877EC6E6D5191BE7D0891F6B46846C2 /* ContainsMultilineText.swift */,
+				F42CA576CD4345EB378FC7CDBA87BF6A /* GenericCollectionView.swift */,
+				7026E210DAB03C8FBFE1CBAD26BF9F20 /* Int+Whitespaces.swift */,
+				30CE952429BE4DDC091EA4D7DE68038C /* PrepareForSkeletonProtocol.swift */,
+				BE25B1E8BEB9E459F44A469C955FAF11 /* ProcessInfo+XCTest.swift */,
+				71B5A59563526692305C4CC79A3DD7D0 /* Recoverable.swift */,
+				D2279344EDD08AB3C589753A1FFD2352 /* RecoverableViewState.swift */,
+				677C055AD7A66A64193196E6579AE174 /* RecursiveProtocol.swift */,
+				4547DAD39CAE1EDE0DBB21FEF60F61BF /* SkeletonAnimationBuilder.swift */,
+				07A08A49539EB2E5152B85C1907E2D45 /* SkeletonAppearance.swift */,
+				250456E7FC368A02CEF554487421613C /* SkeletonCollectionDataSource.swift */,
+				5A2C62DCB38289EED21D8082E61F2BE5 /* SkeletonCollectionDelegate.swift */,
+				1E427504121A90239E4C398FBBEFD1FE /* SkeletonCollectionViewProtocols.swift */,
+				C352273DBBAC038043D939E91A30E2A9 /* SkeletonConfig.swift */,
+				B7B9C5A264A5E67006A5AD985F16A2CF /* SkeletonDebug.swift */,
+				898DA1868B1243E707D2E4FB134C40F3 /* SkeletonFlow.swift */,
+				5BDEA464733D65EE089C73DD255C1B36 /* SkeletonGradient.swift */,
+				8F1D98BFC6EFECC3083D27DDBD7285C4 /* SkeletonLayer.swift */,
+				021A8B0734D535C2AAD898BFA1B19E69 /* SkeletonLayerBuilder.swift */,
+				2355F636BCA83E48F8036DB79B5A9AA5 /* SkeletonMultilineLayerBuilder.swift */,
+				F36B0C44C82517461ED54A7FA7AED50A /* SkeletonReusableCell.swift */,
+				39B9E346F0C60B553748881B6FB74C2E /* SkeletonTableViewProtocols.swift */,
+				E6713B8BEDAABE493109C58909DE0715 /* SkeletonTransitionStyle.swift */,
+				89516841F955D867FA8AD5FD8BCD61C1 /* SkeletonView.swift */,
+				D61603EF9E0306C1A44DD737FB426658 /* SubviewsSkeletonables.swift */,
+				86471328DAD479D9C7B619F1CAB80BEE /* Swizzling.swift */,
+				E5A4D8EE00CA46808F5E826950AD1FD4 /* UICollectionView+CollectionSkeleton.swift */,
+				62E1B09786317434B4EAA8CD66B87792 /* UIColor+Skeleton.swift */,
+				5AB57A6910C8F721853D45E36841B37E /* UILabel+Multiline.swift */,
+				9A5E5B918B84943669828D7B7C10EA63 /* UITableView+CollectionSkeleton.swift */,
+				B9F33371CF9E810DD5D4087DA78B041F /* UITableView+VisibleSections.swift */,
+				D038DD4FAF6CD1E7D1214DF52C9BF913 /* UITextView+Multiline.swift */,
+				A73BD11719C8D2F1912D616F3C7E2081 /* UIView+Autolayout.swift */,
+				F98E5B48189EA55180D2D22ABA9C940C /* UIView+CollectionSkeleton.swift */,
+				00F7BDA83A2B883937DDE3F272212F26 /* UIView+Extension.swift */,
+				F613004A3DB8ED4FF25678569097E347 /* UIView+Frame.swift */,
+				1D97E9B21E60C48695BFDA8D6A0BB7DF /* UIView+IBInspectable.swift */,
+				996FB4EF5F67D2947B8D333B6089A0B9 /* UIView+Transitions.swift */,
+				6354BDF037F4BD2D62DF067437011F3C /* UIView+UIApplicationDelegate.swift */,
+				B882620FBCFAF4188B136CE182041CC6 /* Support Files */,
+			);
+			name = SkeletonView;
+			path = SkeletonView;
+			sourceTree = "<group>";
+		};
+		34056D1B65E7A65B6F88DB3142225206 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				863A3CC6249A3373798651B7DC27344A /* Pods-App */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4231BFA2D2CFCD6DFC68476634FAE33F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				092802B853AB8D905BACFB1992E96854 /* SkeletonView */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		863A3CC6249A3373798651B7DC27344A /* Pods-App */ = {
+			isa = PBXGroup;
+			children = (
+				1280C7726483AF5988A97C0E71844EC8 /* Pods-App.modulemap */,
+				94DDC9C1643EBAA9FA3F2E79CADE2607 /* Pods-App-acknowledgements.markdown */,
+				0AB28DA97C7F19FAF34F0BB3F2C2EBD4 /* Pods-App-acknowledgements.plist */,
+				0A10E8D70C02233E609D8AA94B96BFEF /* Pods-App-dummy.m */,
+				737A543975CD6FF40C6B895D93DB12EC /* Pods-App-umbrella.h */,
+				3AD8F765EF058731D43E2438D190135E /* Pods-App.debug.xcconfig */,
+				2E8A85179406589DA200D633A58333A3 /* Pods-App.release.xcconfig */,
+			);
+			name = "Pods-App";
+			path = "Target Support Files/Pods-App";
+			sourceTree = "<group>";
+		};
+		B882620FBCFAF4188B136CE182041CC6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8D3D01D194963DF961A4A47A4C77D677 /* SkeletonView.modulemap */,
+				2B8FC90FC47ABB7B680C59277CA2DEBE /* SkeletonView-dummy.m */,
+				C08978D368939ED231DC1AF407C75C9F /* SkeletonView-prefix.pch */,
+				A0538E2E80AAF73292BD0180DA0DF7C6 /* SkeletonView-umbrella.h */,
+				F25A881345F498546EB15D3AB9FA4529 /* SkeletonView.debug.xcconfig */,
+				97D2F2B90F968471F18681D69078C30A /* SkeletonView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkeletonView";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				4231BFA2D2CFCD6DFC68476634FAE33F /* Pods */,
+				F8DB568F9657EF477E11BC8E24199460 /* Products */,
+				34056D1B65E7A65B6F88DB3142225206 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8DB568F9657EF477E11BC8E24199460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BEF4602752E47C46E8C10FB8B4B57F2 /* libPods-App.a */,
+				CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* libSkeletonView.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0217E0A80DBD585F484209ECF69A5D93 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7A3019342B2B0041B2FAF2F7424830 /* Pods-App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		462447C1A01986C9DEE11462ECE8330F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				471260DCD412DCF354550360BCEE37FD /* SkeletonView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5C415F33D02A6F89DB713EFB9D75A3FB /* Pods-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49A93BC2E0BDA9809D4DD8B2169CCE0B /* Build configuration list for PBXNativeTarget "Pods-App" */;
+			buildPhases = (
+				0217E0A80DBD585F484209ECF69A5D93 /* Headers */,
+				AA4D9C2318FA143447B60BD0CEEEA645 /* Sources */,
+				B9D1E56FFD1762D35E03F768ACC59C45 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FE3299492258663924EF33423F6E905 /* PBXTargetDependency */,
+			);
+			name = "Pods-App";
+			productName = "Pods-App";
+			productReference = 5BEF4602752E47C46E8C10FB8B4B57F2 /* libPods-App.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 003F68DC7F67BF4003BEE380AAFC5EAE /* Build configuration list for PBXNativeTarget "SkeletonView" */;
+			buildPhases = (
+				462447C1A01986C9DEE11462ECE8330F /* Headers */,
+				C1B2B3881B7EDDD1174EF133930E3B1A /* Sources */,
+				FC2815F1EECCC01C81DC53120C239B5D /* Frameworks */,
+				BB9A09385E133EC1567C450AE7615096 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkeletonView;
+			productName = SkeletonView;
+			productReference = CDC8C1E54D1F3A8B5CAC89FFFF6A3F80 /* libSkeletonView.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = F8DB568F9657EF477E11BC8E24199460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C415F33D02A6F89DB713EFB9D75A3FB /* Pods-App */,
+				8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BB9A09385E133EC1567C450AE7615096 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SkeletonView/SkeletonView.modulemap",
+				"${PODS_ROOT}/Headers/Public/SkeletonView/SkeletonView-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SkeletonView-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SkeletonView/SkeletonView.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SkeletonView/SkeletonView-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA4D9C2318FA143447B60BD0CEEEA645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55F6682E70AA334E9342CAA9EE5AB240 /* Pods-App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1B2B3881B7EDDD1174EF133930E3B1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				615F3ACAF7BA77B9EDE8FFC228048A6D /* AssociationPolicy.swift in Sources */,
+				47E68AF30987BEEAB191E14FB6705CA5 /* CALayer+Extensions.swift in Sources */,
+				6AADFEFCEBD191EFB09731D689D65474 /* CollectionSkeletonProtocol.swift in Sources */,
+				7F32D6553531902BD2A6E58404832362 /* ContainsMultilineText.swift in Sources */,
+				FA59614126D0E18E13EA79E5F6FB9994 /* GenericCollectionView.swift in Sources */,
+				E1F855048C03E9061E4AEF5194D339DA /* Int+Whitespaces.swift in Sources */,
+				84A5B15F6B7D91B2EF94591AB0D9599F /* PrepareForSkeletonProtocol.swift in Sources */,
+				B0CAA4B28294C006D8E3B9AB3E6F718C /* ProcessInfo+XCTest.swift in Sources */,
+				A45E60833407AA0821E0614F8EFE6BA0 /* Recoverable.swift in Sources */,
+				BD7C72024C79074937305126DBC75970 /* RecoverableViewState.swift in Sources */,
+				3582DF20EEEEA0297649A55F10F35301 /* RecursiveProtocol.swift in Sources */,
+				7727526955D490C83247A85BC3E90FF3 /* SkeletonAnimationBuilder.swift in Sources */,
+				E894B2F4CD3943C74D76D3152C99B520 /* SkeletonAppearance.swift in Sources */,
+				66EBF7FF1B9AB3F33B605D8EC8998336 /* SkeletonCollectionDataSource.swift in Sources */,
+				EDA4B8E50DB856E60E4C75A8669B4192 /* SkeletonCollectionDelegate.swift in Sources */,
+				B2B72214C33225789FED0786FFEA869B /* SkeletonCollectionViewProtocols.swift in Sources */,
+				656471BA26CF79BE66B0912363C3DA87 /* SkeletonConfig.swift in Sources */,
+				35D91DE652731F85BBE45D57C4564A61 /* SkeletonDebug.swift in Sources */,
+				7DA73920DE691EF892E44319F1B1FFAC /* SkeletonFlow.swift in Sources */,
+				560E8B941A5A0FCE1F08744A49498B22 /* SkeletonGradient.swift in Sources */,
+				71BE34ABDC0B267640468CDF82D4556D /* SkeletonLayer.swift in Sources */,
+				951526EEFFDF937348897BB428FC7CD1 /* SkeletonLayerBuilder.swift in Sources */,
+				304B20B2BE325A845D79D317F5B21C4F /* SkeletonMultilineLayerBuilder.swift in Sources */,
+				3E7101162F5BA5EBD59999E6CF10B335 /* SkeletonReusableCell.swift in Sources */,
+				5732AF5F04330DDCF600F0779FFDB817 /* SkeletonTableViewProtocols.swift in Sources */,
+				B7EFB3A6BF018CC7AEB8D030CE832EDB /* SkeletonTransitionStyle.swift in Sources */,
+				91A1BE74ACD287A9E4CD4008191D530B /* SkeletonView-dummy.m in Sources */,
+				F2F20902682BF550618B86091ACA1D94 /* SkeletonView.swift in Sources */,
+				998007F43DA2C1B1B2E9D0EDC75BAE06 /* SubviewsSkeletonables.swift in Sources */,
+				A77BAD1511084AAD088D0BFC60552791 /* Swizzling.swift in Sources */,
+				B32F3CE78320D291B18F78C08853EA0A /* UICollectionView+CollectionSkeleton.swift in Sources */,
+				F1833AC4E97963D7A03AA96E5AE94C38 /* UIColor+Skeleton.swift in Sources */,
+				FA4962D32263B68E908CE73F69961CDE /* UILabel+Multiline.swift in Sources */,
+				5CD77FC25190B328F977AB44262A4A05 /* UITableView+CollectionSkeleton.swift in Sources */,
+				F3282E5FE53586F032507154B78B371E /* UITableView+VisibleSections.swift in Sources */,
+				53F564CFE703C865416F0D4086CDD856 /* UITextView+Multiline.swift in Sources */,
+				1D955698B59FA18B3DD9636B2711A0FF /* UIView+Autolayout.swift in Sources */,
+				B456289BE533AA5C3AF5AC2006FEF0B0 /* UIView+CollectionSkeleton.swift in Sources */,
+				8DD4AA7592E9E4B751ADFD8B849C34CC /* UIView+Extension.swift in Sources */,
+				5551182D5F6B120E8223236ED9F6C46B /* UIView+Frame.swift in Sources */,
+				1F8FD1A7CA1EDCF05F760F4C1C753D51 /* UIView+IBInspectable.swift in Sources */,
+				5DC2D9C76BBA78F0F0EC9CFF3F93BD37 /* UIView+Transitions.swift in Sources */,
+				F226EE7A9BADBB3F0A3D3CE3785E3D15 /* UIView+UIApplicationDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FE3299492258663924EF33423F6E905 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkeletonView;
+			target = 8CEEFD1CB630CA790F0396E2E24A4C8C /* SkeletonView */;
+			targetProxy = 1C1EFDEE796E1BF20A0D929D2725B6E3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		125C51B0F88E28C868DC90BD45E4E727 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		331B94B3833820761BDD7A2203DB0F84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97D2F2B90F968471F18681D69078C30A /* SkeletonView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SkeletonView/SkeletonView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SkeletonView/SkeletonView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SkeletonView;
+				PRODUCT_NAME = SkeletonView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4756338E7640D42BC109581A629B647E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E8A85179406589DA200D633A58333A3 /* Pods-App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-App/Pods-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92A3E9AC052A7345115439021B218E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DA9DC24CBADBC8C541429DE0A33CAE6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AD8F765EF058731D43E2438D190135E /* Pods-App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-App/Pods-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E091681E57D8D7529C8736120262C2C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25A881345F498546EB15D3AB9FA4529 /* SkeletonView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/SkeletonView/SkeletonView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/SkeletonView/SkeletonView.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SkeletonView;
+				PRODUCT_NAME = SkeletonView;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		003F68DC7F67BF4003BEE380AAFC5EAE /* Build configuration list for PBXNativeTarget "SkeletonView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E091681E57D8D7529C8736120262C2C2 /* Debug */,
+				331B94B3833820761BDD7A2203DB0F84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				125C51B0F88E28C868DC90BD45E4E727 /* Debug */,
+				92A3E9AC052A7345115439021B218E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49A93BC2E0BDA9809D4DD8B2169CCE0B /* Build configuration list for PBXNativeTarget "Pods-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA9DC24CBADBC8C541429DE0A33CAE6A /* Debug */,
+				4756338E7640D42BC109581A629B647E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

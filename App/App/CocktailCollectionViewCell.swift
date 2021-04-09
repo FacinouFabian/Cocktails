@@ -16,15 +16,10 @@ class CocktailCollectionViewCell: UICollectionViewCell {
         guard let drink = drink else { return }
         
         self.nameLabel.text = drink.strDrink
+        self.nameLabel.font = UIFont(name: "DelaGothicOne-Regular", size: self.nameLabel.font.pointSize)
         
-        print(drink.ingredients)
         
-        if let url = URL(string: drink.strDrinkThumb){
-            if let data = try? Data(contentsOf: url) {
-                // Create Image and Update Image View
-                self.imageView.image = UIImage(data: data)
-            }
-        }
+        self.imageView.fetchImage(from: URL(string: drink.strDrinkThumb))
     }
     
     override func layoutSubviews() {
