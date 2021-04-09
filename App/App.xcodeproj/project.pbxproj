@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CAA64BE26202BBD002B7F64 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA64BD26202BBD002B7F64 /* UIImageView+Extension.swift */; };
+		1CAA64C126203834002B7F64 /* UIColor+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAA64C026203834002B7F64 /* UIColor+Ext.swift */; };
 		1F34F270261700DD00EDDE6A /* Drinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34F26F261700DD00EDDE6A /* Drinks.swift */; };
 		1F34F276261702D100EDDE6A /* APIDrinksManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34F275261702D100EDDE6A /* APIDrinksManager.swift */; };
 		1F34F27A261704DE00EDDE6A /* DrinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F34F279261704DE00EDDE6A /* DrinksViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CAA64BD26202BBD002B7F64 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		1CAA64C026203834002B7F64 /* UIColor+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Ext.swift"; sourceTree = "<group>"; };
 		1F34F26F261700DD00EDDE6A /* Drinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Drinks.swift; sourceTree = "<group>"; };
 		1F34F275261702D100EDDE6A /* APIDrinksManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDrinksManager.swift; sourceTree = "<group>"; };
 		1F34F279261704DE00EDDE6A /* DrinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksViewController.swift; sourceTree = "<group>"; };
@@ -79,8 +83,10 @@
 				1F34F2872617258800EDDE6A /* CocktailCollectionViewCell.swift */,
 				1F34F28A261727F200EDDE6A /* MyContentView.swift */,
 				1F34F275261702D100EDDE6A /* APIDrinksManager.swift */,
+				1CAA64BD26202BBD002B7F64 /* UIImageView+Extension.swift */,
 				F095196B260DC81000651E52 /* Models */,
 				F0951975260E0C4E00651E52 /* Label.swift */,
+				1CAA64C026203834002B7F64 /* UIColor+Ext.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CAA64BE26202BBD002B7F64 /* UIImageView+Extension.swift in Sources */,
 				1F34F28B261727F200EDDE6A /* MyContentView.swift in Sources */,
 				1F34F276261702D100EDDE6A /* APIDrinksManager.swift in Sources */,
 				1F34F27E261707B000EDDE6A /* DrinkInfoViewController.swift in Sources */,
+				1CAA64C126203834002B7F64 /* UIColor+Ext.swift in Sources */,
 				1F34F27A261704DE00EDDE6A /* DrinksViewController.swift in Sources */,
 				1F34F270261700DD00EDDE6A /* Drinks.swift in Sources */,
 				F094B44D260CB6F8002F4EED /* AppDelegate.swift in Sources */,
@@ -328,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.bodyguard.app.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -347,7 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.bodyguard.app.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

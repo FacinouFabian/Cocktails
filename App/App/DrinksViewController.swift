@@ -12,18 +12,11 @@ class DrinksViewController: UIViewController, UICollectionViewDataSource {
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var data: Drinks?
+    private var refreshControl = UIRefreshControl()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        APIDrinksManager.shared.drinks { (drinks) -> (Void) in
-            if let drinks = drinks {
-                self.data = drinks
-                self.collectionView?.reloadData()
-                
-            } else {
-                print("Could not fetch drinks")
-            }
-        }
+        refreshData()
     }
     
     override func viewDidLoad(){
@@ -32,6 +25,9 @@ class DrinksViewController: UIViewController, UICollectionViewDataSource {
         layout.scrollDirection = .vertical
         
         self.collectionView.setCollectionViewLayout(layout, animated: true)
+        self.collectionView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        refreshControl.tintColor = UIColor.init(hex: "#f50057ff")
     }
 
     
@@ -45,6 +41,17 @@ class DrinksViewController: UIViewController, UICollectionViewDataSource {
         }
     }
 
+    @objc private func refreshData() {
+        APIDrinksManager.shared.drinks { (drinks) -> (Void) in
+            if let drinks = drinks {
+                self.data = drinks
+                self.collectionView?.reloadData()
+            } else {
+                print("Could not fetch drinks")
+            }
+            self.refreshControl.endRefreshing()
+        }
+    }
 }
 
 extension DrinksViewController {
@@ -62,12 +69,6 @@ extension DrinksViewController {
     }
 }
 
-extension DrinksViewController: UICollectionViewDelegate {
-
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath.item + 1)
-    }
-}
 
 extension DrinksViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -75,9 +76,10 @@ extension DrinksViewController: UICollectionViewDelegateFlowLayout {
         let flowlayout = collectionViewLayout as? UICollectionViewFlowLayout
         
         let space: CGFloat = (flowlayout?.minimumInteritemSpacing ?? 0.0) + (flowlayout?.sectionInset.left ?? 0.0) + (flowlayout?.sectionInset.right ?? 0.0)
-        
-        let size:CGFloat = (collectionView.frame.size.width - space) / 2.0
-        
+        var size:CGFloat =  (collectionView.frame.size.width - space) / 2.0
+        if UIDevice.current.model.hasPrefix("iPad") {
+            size = (collectionView.frame.size.width - space) / 4.0
+        }
 
         return CGSize(width: size, height: size * 1.5)
 

@@ -33,6 +33,23 @@ struct Drink: Decodable {
     let strIngredient13: String?
     let strIngredient14: String?
     let strIngredient15: String?
+    
+    
+    let strMeasure1: String?
+    let strMeasure2: String?
+    let strMeasure3: String?
+    let strMeasure4: String?
+    let strMeasure5: String?
+    let strMeasure6: String?
+    let strMeasure7: String?
+    let strMeasure8: String?
+    let strMeasure9: String?
+    let strMeasure10: String?
+    let strMeasure11: String?
+    let strMeasure12: String?
+    let strMeasure13: String?
+    let strMeasure14: String?
+    let strMeasure15: String?
     var ingredients: [String] {
         var array: [String] = []
         
@@ -51,6 +68,27 @@ struct Drink: Decodable {
         if let i = strIngredient13 { array.append(i) }
         if let i = strIngredient14 { array.append(i) }
         if let i = strIngredient15 { array.append(i) }
+        
+        return array
+    }
+    var measures: [String] {
+        var array: [String] = []
+        
+        if let i = strMeasure1 { array.append(i) }
+        if let i = strMeasure2 { array.append(i) }
+        if let i = strMeasure3 { array.append(i) }
+        if let i = strMeasure4 { array.append(i) }
+        if let i = strMeasure5 { array.append(i) }
+        if let i = strMeasure6 { array.append(i) }
+        if let i = strMeasure7 { array.append(i) }
+        if let i = strMeasure8 { array.append(i) }
+        if let i = strMeasure9 { array.append(i) }
+        if let i = strMeasure10 { array.append(i) }
+        if let i = strMeasure11 { array.append(i) }
+        if let i = strMeasure12 { array.append(i) }
+        if let i = strMeasure13 { array.append(i) }
+        if let i = strMeasure14 { array.append(i) }
+        if let i = strMeasure15 { array.append(i) }
         
         return array
     }
