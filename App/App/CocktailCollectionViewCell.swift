@@ -16,8 +16,9 @@ class CocktailCollectionViewCell: UICollectionViewCell {
         guard let drink = drink else { return }
         
         self.nameLabel.text = drink.strDrink
+        self.nameLabel.font = UIFont(name: "DelaGothicOne-Regular", size: self.nameLabel.font.pointSize)
         
-        print(drink.ingredients)
+        
         self.imageView.fetchImage(from: URL(string: drink.strDrinkThumb))
     }
     

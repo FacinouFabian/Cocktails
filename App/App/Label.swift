@@ -7,7 +7,12 @@
 
 import UIKit
 
-class Label: UILabel {
-
+@IBDesignable class Label: UILabel {
+    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+            layer.masksToBounds = cornerRadius > 0
+        }
+    }
 
 }

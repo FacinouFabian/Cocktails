@@ -41,7 +41,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="202" height="256"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G7-jt-Teo">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G7-jt-Teo" customClass="Label" customModule="App" customModuleProvider="target">
                                                     <rect key="frame" x="10" y="225" width="182" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="vJ8-NP-Cjb"/>
@@ -305,6 +305,11 @@
             <point key="canvasLocation" x="131.8840579710145" y="24.776785714285712"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="2G7-jt-Teo">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
     <resources>
         <image name="arrow" width="170.5" height="170.5"/>
         <namedColor name="Text Color">

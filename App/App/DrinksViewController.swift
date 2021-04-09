@@ -4,14 +4,22 @@
 //
 //  Created by Fabian on 02/04/2021.
 //
-
+import SkeletonView
 import UIKit
 
 class DrinksViewController: UIViewController, UICollectionViewDataSource {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    private var data: Drinks?
+    private var data: Drinks? {
+        willSet {
+            print(newValue)
+        }
+        
+        didSet {
+            self.collectionView.reloadData()
+        }
+    }
     private var refreshControl = UIRefreshControl()
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +53,7 @@ class DrinksViewController: UIViewController, UICollectionViewDataSource {
         APIDrinksManager.shared.drinks { (drinks) -> (Void) in
             if let drinks = drinks {
                 self.data = drinks
-                self.collectionView?.reloadData()
+                
             } else {
                 print("Could not fetch drinks")
             }
